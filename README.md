@@ -58,6 +58,7 @@ Ou execute o comando SQL `CREATE DATABASE ThomasCRUD;`
    "ConnectionStrings": {
      "DefaultConnection": "SUA-STRING-DE-CONEXÃO-AQUI"
    }
+```
 
 4. Abra o Visual Studio 2022 ou VS Code
   - No terminal execute o comando `dotnet ef database update`
