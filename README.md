@@ -86,6 +86,6 @@ Ou execute o comando SQL `CREATE DATABASE ThomasCRUD;`
 
 ## Segurança
 Proteção contra SQL Injection com uso de:
-    - Stored Procedures com parâmetros
-    - Consultas LINQ para leitura
+  - Stored Procedures com parâmetros
+  - Consultas LINQ para leitura
   - Endpoints sensíveis protegidos com [Authorize]
