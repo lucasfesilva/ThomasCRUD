@@ -80,7 +80,6 @@ Ou execute o comando SQL `CREATE DATABASE ThomasCRUD;`
 ## Observações Técnicas
   - Stored Procedures são utilizadas para operações de escrita (INSERT, UPDATE, DELETE) via ExecuteSqlRaw
   - Operações de leitura utilizam LINQ com EF Core
-  - Relacionamentos entre entidades são respeitados (Cliente ↔ Logradouros)
   - Todos os dados sensíveis são protegidos por DTOs
 
 
