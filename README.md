@@ -4,7 +4,7 @@ Uma API RESTful desenvolvida com **.NET 8.0**, utilizando o **Entity Framework C
 
 ## Tecnologias Utilizadas
 - .NET 8.0  
-- ASP.NET Core Web API  
+- ASP.NET Core
 - Entity Framework Core  
 - ASP.NET Identity  
 - SQL Server 2019  
