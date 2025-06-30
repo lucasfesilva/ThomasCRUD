@@ -63,10 +63,9 @@ Ou execute o comando SQL `CREATE DATABASE ThomasCRUD;`
 4. Abra o Visual Studio 2022 ou VS Code
   - No terminal execute o comando `dotnet ef database update`
   - Ou no Gerenciado de Pacotes NuGet execute o comando `Update-Database`
-Isso irá criar as tabelas e Stored Procedures no banco de dados com base nas entidades e contexto
+**Isso irá criar as tabelas e Stored Procedures no banco de dados com base nas entidades e contexto**
 
-5. Rode a aplicação
-  - Execute o comando `dotnet run` no terminal.
+5. Rode a aplicação executando o comando `dotnet run` no terminal.
 
 6. Testando a Autenticação no Swagger:
   - Acesso o endpoint `/api/Auth/register` para *criar um usuário*
