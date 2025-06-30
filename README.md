@@ -63,6 +63,7 @@ Ou execute o comando SQL `CREATE DATABASE ThomasCRUD;`
 4. Abra o Visual Studio 2022 ou VS Code
   - No terminal execute o comando `dotnet ef database update`
   - Ou no Gerenciado de Pacotes NuGet execute o comando `Update-Database`
+    
 **Isso irá criar as tabelas e Stored Procedures no banco de dados com base nas entidades e contexto**
 
 5. Rode a aplicação executando o comando `dotnet run` no terminal.
@@ -73,4 +74,18 @@ Ou execute o comando SQL `CREATE DATABASE ThomasCRUD;`
   - Copie o token JWT retornado
   - Clique no botão `Authorize` no topo do Swagger
   - Cole o token
+    
 **Agora você poderá acessar todos os endpoints protegidos**
+
+## Observações Técnicas
+  - Stored Procedures são utilizadas para operações de escrita (INSERT, UPDATE, DELETE) via ExecuteSqlRaw
+  - Operações de leitura utilizam LINQ com EF Core
+  - Relacionamentos entre entidades são respeitados (Cliente ↔ Logradouros)
+  - Todos os dados sensíveis são protegidos por DTOs
+
+
+## Segurança
+Proteção contra SQL Injection com uso de:
+    - Stored Procedures com parâmetros
+    - Consultas LINQ para leitura
+  - Endpoints sensíveis protegidos com [Authorize]
